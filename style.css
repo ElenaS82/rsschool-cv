@@ -23,8 +23,8 @@ body {
 .photo {
   border-radius: 30%;
   border: 1px solid gray;
-  width: 120px; 
-  height: 140px;
+  width: 90px;
+  height: 110px;
 }
 .name {
   text-decoration: underline;
