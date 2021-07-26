@@ -1,0 +1,57 @@
+body {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+.heading {
+  color: rgb(119, 155, 175);
+}
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+.header_img {
+  margin-right: 20px;
+}
+.outer {
+  max-width: 1024px;
+}
+.beginner{
+  text-transform: uppercase;
+}
+.photo {
+  border-radius: 30%;
+  border: 1px solid gray;
+  width: 120px; 
+  height: 140px;
+}
+.name {
+  text-decoration: underline;
+  color: black;
+  font-size: 24px;
+}
+footer {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgb(119, 155, 175);
+  padding: 10px 300px;
+}
+.img__rss {
+  width: 50px;
+  height: 50px;
+}
+.year {
+  color: black;
+  font-size: 18px;
+  text-decoration: underline;
+  font-weight: 900;
+}
+.github {
+  background: url(./images/icons-github.png) no-repeat;
+  width: 40px;
+  height: 40px;
+  color: antiquewhite;
+}
