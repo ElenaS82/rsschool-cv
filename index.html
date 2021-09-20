@@ -10,50 +10,88 @@
   <body>
     <div class="outer">
       <header class="header">
-        <div class="header_img">
-          <img class="photo" src="./images/photo.jpg" alt="my photo">
-        </div>
-        <div class="header_wrap">
-          <h1 class="name">Sergeeva Elena Vladimirovna</h1>
-          <div class="beginner">beginner front-end developer</div>
+        <div class="header-contaner">
+          <div class="photo-contaner">
+            <img class="photo" src="./images/photo.jpg" alt="my photo">
+          </div>
+          <div>
+            <nav>
+              <ul class="nav-list">
+                <li class="nav-item"> <a href="#contacts" class="nav-link">Contacts</a> </li>
+                <li class="nav-item"> <a href="#education" class="nav-link">Education</a> </li>
+                <li class="nav-item"> <a href="#skills" class="nav-link">Skills</a> </li>
+                <li class="nav-item"> <a href="#projects" class="nav-link">Projects</a> </li>
+                <li class="nav-item"> <a href="#myCode" class="nav-link">MyCode</a> </li>
+                <li class="nav-item"> <a href="#english" class="nav-link">English</a> </li>
+              </ul>
+            </nav>
+          </div>
         </div>
       </header>
-
-      <main>
+      <main class="main">
         <article>
-          <h2>About me:</h2>
-          <section>
-            <h3 class="heading">My goal:</h3>
-            <div id="main">I want to become a good front-end developer. My current experience is poor,
+            <div>
+              <h1 class="h1">Sergeeva Elena Vladimirovna</h1>
+            </div>
+            <div>
+              <p class="pheader">beginner front-end developer</p>
+            </div>
+          <section class="section">
+            <h3 class="heading underlin-heading">My goal:</h3>
+            <div class="text">I want to become a good front-end developer. My current experience is poor,
               but I am ready to work hard.
             </div>
           </section>
-          <section>
+          <h2 class="h2">About me:</h2>
+          <section class="section">
             <h3 class="heading">Personal information:</h3>
-            <div><b>Location:</b> RF, Saratov</div>
-            <div><b>Data of birth:</b> 24.07.1982</div>
-            <h3 class="heading">Contacts:</h3>
-            <ul>
-              <li><b>Tel:</b> +7 9372506840</li>
+            <div class="text"><b>Location:</b> RF, Saratov</div>
+            <div class="text"><b>Data of birth:</b> 24.07.1982</div>
+          </section>
+          <section class="section">
+            <h3 class="heading" id="contacts">Contacts:</h3>
+            <ul class="text">
+              <li><b>Tel:</b> +7 937 250 68 40</li>
               <li><b>E-mail:</b> e.sergeeva.82@mail.ru</li>
               <li><b>Telegram:</b> Venera82 </li>
             </ul>
           </section>
-          <section>
-            <h3 class="heading">Education:</h3>
-            <div>1999-2004</div>
-            <div>Saratov State University named after Chernyshevsky</div>
-            <div>Faculty of Physics</div>
+          <section class="section">
+            <h3 class="heading" id="education">Education:</h3>
+            <div class="text">1999-2004</div>
+            <div class="text">Saratov State University named after Chernyshevsky</div>
+            <div class="text">Faculty of Physics</div>
           </section>
-          <section>
-            <h3 class="heading">Skills:</h3>
-            <ul>
+          <section class="section">
+            <h3 class="heading" id="skills">Skills:</h3>
+            <ul class="text">
               <li><b>CSS:</b> ★☆☆☆☆</li>
               <li><b>HTML:</b> ★☆☆☆☆</li>
               <li><b>JavaScript:</b> ★☆☆☆☆</li>
             </ul>
           </section>
-          <section>
+          <section class="section">
+            <h3 class="heading underlin-heading" id="projects">Projects:</h3>
+            <div class="projects">
+                <div>
+                  <a href="https://rolling-scopes-school.github.io/elenas82-JSFEPRESCHOOL/museum/"><img class="img__rss" src="./images/museum.jpg" alt="museum"></a>
+                </div>
+                <div>
+                  <h4> Museum</h4>
+                  <p>Landing page of the Louvre - one of the largest and most popular art museums in the world</p>
+                  <p>HTML, CSS, JavaScript</p>
+                </div>
+                <div>
+                  <a href="https://rolling-scopes-school.github.io/elenas82-JSFEPRESCHOOL/vertical-slider/"><img class="img__rss" src="./images/slider2.PNG" alt="slider"></a>
+                </div>
+                <div>
+                  <h4> Slider</h4>
+                  <p>Landing page of the Louvre - one of the largest and most popular art museums in the world</p>
+                  <p>HTML, CSS, JavaScript</p>
+                </div>
+            </div>
+          </section>
+          <section class="section" id="myCode">
             <h3 class="heading">My code:</h3>
             <pre>
               <code>
@@ -65,16 +103,16 @@
               </code>
             </pre>
           </section>
-          <section>
+          <section id="english" class="section">
             <h3 class="heading">English:</h3>
-            <div>A1 level English (score from EPAM Examinator 10.07.2021)</div>
+            <div class="text">A1 level English (score from EPAM Examinator 10.07.2021)</div>
           </section>
         </article>
       </main>
 
       <footer class="footer">
         <a href="https://github.com/ElenaS82/"><img class="github" src="./images/icons-github.png" alt="github"></a>
-        <a href="https://rs.school/js/"><img class="img__rss" src="./images/rs_school.svg" alt="rss_logo"></a>
+        <a href="https://rs.school/js/"><img class="img__rss2" src="./images/rs_school.svg" alt="rss_logo"></a>
         <div class="year">2021 </div>
       </footer>
     </div>
