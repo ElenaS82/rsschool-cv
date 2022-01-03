@@ -1,0 +1,279 @@
+%flex-space {
+  display: flex;
+  justify-content: space-between;
+}
+
+li {
+  list-style: none;
+}
+ul {
+  padding-left: 0px;
+}
+.outer {
+  background-size: 100% 100%;
+  margin: 0 auto;
+  max-width: 1024px;
+}
+
+// header //___________________________
+.header {
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-item {
+  padding-right: 15px;
+  padding-bottom: 5px;
+  @extend %flex-space;
+}
+
+.nav-link {
+  color: black;
+  text-decoration: none;
+  font-size: 130%; 
+}
+
+.menu-btn {
+  width: 40px;
+  height: 40px;
+  background-color:white;
+  position: relative;
+  color: black;
+  text-align: center;
+  cursor: pointer;
+  right: 10px;
+  padding-top: 10px;
+  margin-left: auto;
+  margin-right: 0;
+  display: none;
+}
+.burger-line {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  width: 35px;
+  height: 2px;
+  background-color: black;
+  cursor: pointer;
+}
+.burger-line_first {
+  top: 0px;
+}
+.burger-line_second {
+  top: 50%;
+  transform: translateY(-50%);
+}
+.burger-line_third {
+  bottom: 0px;
+}
+.second, .third {
+  top: 12px;
+}
+.fourth {
+  top: 24px;
+}
+@media (max-width: 700px) {
+  .nav-list {
+    display: none;
+  }
+}
+@media (max-width: 700px) {
+  .menu-btn {
+    display: block;
+  }
+}
+.menu-btn:hover .burger-line {
+  background-color:blue;
+ transition: .4s all;
+}
+
+.menu {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translateY(100%);
+  max-width: 0;
+  font-size: 0;
+  background-color: white;
+  overflow: hidden;
+  transition: 0.5s all;
+  &.active {
+    max-width: 800px;
+    font-size: 20px;
+  }
+
+
+
+  // main //--------------------
+}
+a {
+padding-top: 5px;
+}
+
+.h1 {
+  padding-left: 50px;
+  font-size: 250%;
+}
+article {
+  @extend %flex-space;
+  // flex-wrap: wrap;
+}
+@media (max-width: 700px) {
+  .h1 {
+    padding-left: 30px;
+    font-size: 250%;
+}
+}
+.text {
+  font-size: 150%; 
+}
+.pheader {
+  padding-left: 50px;
+  font-size: 200%;
+  font-style: italic;
+  /* margin-top: 10px; */
+  margin-bottom: 10px;
+}
+.contaner-first {
+  padding-left: 10px;
+  background-color: rgb(188, 238, 241);
+  border-radius: 10px;
+
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  color: blue;
+}
+
+video {
+  height: 300px;
+  width: 300px;
+  padding-left: 30px;
+  padding-bottom: 10px;
+
+}
+.photo-contaner {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+h3 {
+  margin-bottom: 15px;
+}
+.photo {
+  border-radius: 50%;
+  border: 1px solid gray;
+  width: 200px;
+  height: 210px;
+}
+.heading {
+  font-size: 200%;
+  /* padding-left: 30px; */
+}
+.section {
+  padding-left: 30px;
+  padding-bottom: 30px;
+  // background-color: rgb(226, 240, 243);
+  // border-radius: 10px;
+  padding-right: 30px;
+}
+.section-sec {
+  padding-left: 30px;
+  padding-bottom: 30px;
+  background-color: rgb(226, 240, 243);
+  border-radius: 10px;
+  padding-right: 30px;  
+}
+.section-second {
+  padding-left: 30px;
+  padding-bottom: 30px;
+}
+.h2 {
+  padding-left: 30px;
+  font-style: italic;
+  font-size: 200%;
+}
+h4 {
+  font-size: 130%; 
+  font-style: italic;
+  padding-bottom: 0px;
+  padding-left: 15px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+p {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.header_img {
+  margin-right: 30px;
+}
+.namenav {
+  display: flex;
+  flex-direction: column;
+}
+
+.beginner{
+  text-transform: uppercase;
+}
+
+.name {
+  /* text-decoration: underline; */
+  color: black;
+  font-size: 24px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+// footer //----------------------------------
+
+
+footer {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background:  rgb(20, 226, 233);
+  border-radius: 10px;
+  width: auto;
+}
+.projects {
+  // display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 0px; 
+}
+.img__rss {
+  width: 170px;
+  height: 150px;
+}
+.img__rss2 {
+  width: 50px;
+  height: 50px;
+}
+.year {
+  color: rgb(51, 51, 51);
+  font-size: 25px;
+  /* text-decoration: underline; */
+  font-weight: 900;
+  padding-right: 50px;
+}
+.github {
+  background: url(./images/icons-github.png) no-repeat;
+  width: 40px;
+  height: 40px;
+  color: antiquewhite;
+  padding-left: 50px;
+}
+
